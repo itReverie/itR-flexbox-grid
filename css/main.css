@@ -5,29 +5,124 @@ body{
     font-family: arial,sans-serif;
 }
 
-.flex-container{
-    display: flex;
+.border-color{
     border:solid 4px dodgerblue;
+}
+
+.flex-container{
+    display: inline-flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    height: 30em;
 }
 
 .inlineflex-container{
     display: inline-flex;
-    border:solid 4px dodgerblue;
+    flex-direction: column-reverse;
+    flex-wrap: wrap-reverse;
+    height: 30em;
 }
+
+
+.rowflex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+
+.rowreverseflex-container{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+}
+
+
+
+
 .flex-item{
     color: floralwhite;
     font-size: 1.2em;
     padding: 1em;
     text-align: center;
+    flex-grow: 1;
 }
+
+
+.one-digit-item{
+    flex-basis: 1.14em;
+}
+
+
 
 .flex-item:first-child{
     background-color: aquamarine;
-}
 
+}
 .flex-item:nth-child(2){
     background-color: cadetblue;
 }
 .flex-item:nth-child(3){
     background-color: aqua;
+}
+.flex-item:nth-child(4){
+    background-color: #89dab0;
+}
+.flex-item:nth-child(5){
+    background-color: #19b7da;
+}
+.flex-item:nth-child(6){
+    background-color: #75da8f;
+}
+.flex-item:nth-child(7){
+    background-color: #72da41;
+}
+.flex-item:nth-child(8){
+    background-color: #96ffd7;
+}
+.flex-item:nth-child(9){
+    background-color: #859fa0;
+}
+.flex-item:nth-child(10){
+    background-color: #d6fff8;
+}
+.flex-item:nth-child(11){
+    background-color: #b2d3da;
+}
+.flex-item:nth-child(12){
+    background-color: #bacdda;
+}
+.flex-item:nth-child(13){
+    background-color: #c8d9da;
+}
+.flex-item:nth-child(14){
+    background-color: #e8fffa;
+}
+
+
+
+.my-flex-container{
+    display: flex;
+    flex-direction: row;
+    border:solid 4px deeppink;
+    align-items: center;
+}
+
+.my-flex-item{
+    color: lightgray;
+    font-size: 1.2em;
+    padding: 1em;
+    text-align: center;
+    flex-grow: 1;
+}
+.my-flex-item:first-child {
+    background-color: lightpink;
+
+}
+.my-flex-item:nth-child(2) {
+    background-color: hotpink;
+
+}
+.my-flex-item:nth-child(3) {
+    background-color: plum;
+
 }
